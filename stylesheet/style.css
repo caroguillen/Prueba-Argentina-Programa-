@@ -1,0 +1,280 @@
+* { margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+  }
+  body {
+    background-image: url(https://st3.depositphotos.com/1020804/18694/i/600/depositphotos_186942168-stock-photo-moon-and-stars-in-the.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 30px;
+    color: black;
+    text-shadow: 2px 2px 8px whitesmoke;
+    font-family: 'Kristen ITC', 'verdana', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    justify-content: center;
+  }
+    
+  
+
+  header {
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: lightblue;
+    border-radius: 30px;
+      
+    }
+
+    header div section img {
+      margin: 30px;
+      width: 20%;
+      border-radius: 50%;
+      background-color: darkcyan;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-evenly;
+      
+    }
+  
+    
+    header .logo {
+      border-radius: 30px;
+      width: 30%;
+    }
+
+
+  header nav ul { 
+    list-style: none; 
+    display:flex;
+    flex-wrap: wrap;    
+    background-color: lightseagreen;
+    justify-content: space-evenly;
+    border-radius: 25px;    
+  }
+
+   nav ul li a {
+    text-decoration: none; 
+    padding: 20px; 
+    margin: 40px;
+    
+    color:blue;
+    font-size: 30px;
+    }
+
+    /* estilado de main*/ 
+
+    main {background-color: steelblue;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 40px;
+      flex-wrap: wrap;
+      }
+        div.sinopsis {
+        display: flex;
+        justify-content: space-between; 
+        
+        padding: 30px;
+        background-color: lightseagreen;
+        border-radius: 30px;
+        flex-direction: row;
+      
+       }  
+       
+       main section h2{ 
+      
+        font-size: 50px;
+        color: darkblue;
+      
+        justify-content: center;
+        text-align: center;
+        background-color: darkcyan;
+        border-radius: 30px;
+        margin: 20px;}
+          
+      img.portal{
+        width : 40%;
+        border-radius: 20%;
+        margin: 20px;
+        background-color: aquamarine;
+        padding: 20px; 
+
+      }
+        
+        div.texto {
+          font-size: 20px;
+          color:black;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 20px;
+          width: 60%;   
+        }
+      
+     
+      /* estilo de contenedor de grid*/
+      div.conteiner{ 
+        background-color: rgb(157, 176, 238) ;
+        border-radius: 20px;
+        padding: 20px;
+      }
+
+      
+      div.grid-item {
+        background-color: rgb(66, 66, 228);
+        border-radius: 20px;
+        width: 250px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      div.grid-item img {
+        width: 200px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        padding: 20px;
+        margin: 20px;
+      }
+      /*comienzo de estilos seccion episodios*/
+      div.on-line {
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(93, 57, 126);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+      }
+      
+      img.logo-hbo {
+        width: 20%; 
+        border-radius: 20px;
+        margin: 20px;
+        background-color: aquamarine;
+        padding: 20px; 
+        justify-content: space-between
+       }
+
+       p.capitulos{
+        width: 60%;              
+        
+        text-align: center;
+       }
+       /*estilado del footer*/
+
+      footer {
+        background-color: cornflowerblue;
+        border-radius: 20px;
+        margin: 20px;
+        
+      }
+      section.Contact { 
+        padding: 30px;
+        justify-content: space-between;
+        display: flex;
+        margin: 40px;
+
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+      }
+      ul.personal {
+        list-style: none;
+      }
+      /*media queri o punto de quiebre*/
+
+      @media ( max-width : 480px ){
+        header div section.foto {
+          flex-direction: column;
+          align-items: center ;
+        }
+
+   
+        header div section img {
+          width: 50%;
+        }
+        header .logo {
+          width: 60%;
+        }
+
+        header nav ul {
+          flex-direction: column;
+          align-items: center ;
+          
+        }
+
+        main{
+          padding: 20px;
+          margin: 20px;
+          align-items: center ;
+          flex-direction: column;
+        }
+        div.sinopsis {
+          justify-content: center;
+          align-items: center ;
+          flex-direction: column;
+        }
+   
+
+        img.portal {
+          width: 90%;
+          padding: 10px;
+        }
+        div.texto {
+          width: 90%;
+          text-align: center;
+
+        }
+        main section h2{ 
+          font-size: 35px;
+
+        }
+        div.conteiner{ 
+          padding: 10px;
+          margin: 10px;
+        }
+        img.logo-hbo{
+          width: 40%;
+          padding: 10px;
+          margin: 10px;
+        }
+        footer {
+          padding: 5px;
+          margin: 5px;
+        }
+        section.Contact{
+          padding: 5px;
+          margin: 10px;
+        flex-direction: column;}
+
+      }
+      @media ( max-width : 880px ){
+
+        header div section.foto {
+          flex-direction: column;
+          align-items: center ;
+        }
+        header nav ul {
+          flex-direction: column;
+          align-items: center ;
+          margin: 10px;
+          padding: 10px;
+          
+        }  div.sinopsis {
+          justify-content: center;
+          align-items: center ;
+          flex-direction: column;
+        }
+        img.portal {
+          width: 90%;
+          padding: 10px;
+        }
+        div.texto {
+          width: 90%;
+          text-align: center;
+
+      }
+    }
+
+
+
