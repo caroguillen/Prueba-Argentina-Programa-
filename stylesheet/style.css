@@ -62,10 +62,10 @@
 
     /* estilado de main*/ 
 
-    main {background-color: steelblue;
+    main {
       border-radius: 20px;
-      padding: 40px;
-      margin: 40px;
+      padding: 10px;
+      margin: 20px;
       flex-wrap: wrap;
       }
         div.sinopsis {
@@ -73,10 +73,10 @@
         justify-content: space-between; 
         
         padding: 30px;
-        background-color: lightseagreen;
+        background-color: rgb(47, 238, 228);
         border-radius: 30px;
         flex-direction: row;
-      
+        
        }  
        
        main section h2{ 
@@ -94,7 +94,7 @@
         width : 40%;
         border-radius: 20%;
         margin: 20px;
-        background-color: aquamarine;
+        background-color: rgb(79, 183, 252);
         padding: 20px; 
 
       }
@@ -109,40 +109,46 @@
       
      
       /* estilo de contenedor de grid*/
-      div.conteiner{ 
-        background-color: rgb(157, 176, 238) ;
-        border-radius: 20px;
-        padding: 20px;
+      div.contenedor-tarjetas{ 
+        display: flex;
+        flex-wrap: wrap;
       }
 
       
-      div.grid-item {
-        background-color: rgb(66, 66, 228);
+      div.contenedor-personajes {
+       background-color: aqua;
         border-radius: 20px;
         width: 250px;
-        padding: 20px;
+        padding: 10px;
         margin: 20px;
         text-align: center;
-        display: flex;
+        border-style: dashed ;
+        
         flex-wrap: wrap;
-        justify-content: center;
+       
+      }
+      div.contenedor-personajes :hover{
+        background-color: chartreuse;
       }
       
-      div.grid-item img {
+      
+      div img.personajes  {
         width: 200px;
         border-radius: 50%;
-        background-color: aquamarine;
+        background-color: rgb(4, 77, 52);
         padding: 20px;
         margin: 20px;
+
       }
       /*comienzo de estilos seccion episodios*/
       div.on-line {
         margin: 10px;
         padding: 20px;
-        background-color: rgb(93, 57, 126);
+        background-color: rgb(132, 98, 163);
         border-radius: 20px;
         display: flex;
         align-items: center;
+        font-size: 20px;
       }
       
       img.logo-hbo {
@@ -183,7 +189,7 @@
       }
       /*media queri o punto de quiebre*/
 
-      @media ( max-width : 480px ){
+      @media ( max-width : 370px ){
         header div section.foto {
           flex-direction: column;
           align-items: center ;
@@ -191,21 +197,27 @@
 
    
         header div section img {
-          width: 50%;
+          width: 70%;
         }
         header .logo {
-          width: 60%;
+          width: 70%;
         }
 
         header nav ul {
           flex-direction: column;
           align-items: center ;
-          
+        
+        }
+        nav ul li a{
+          padding: 0px; 
+          font-size: 20px;
+          margin: 0;
+        
         }
 
         main{
-          padding: 20px;
-          margin: 20px;
+          padding: 2px;
+          margin: 2px;
           align-items: center ;
           flex-direction: column;
         }
@@ -217,12 +229,12 @@
    
 
         img.portal {
-          width: 90%;
-          padding: 10px;
+          width: 100%;
+          padding: px;
         }
         div.texto {
-          width: 90%;
-          text-align: center;
+          width: 100%;
+          text-align: justify;
 
         }
         main section h2{ 
@@ -233,8 +245,11 @@
           padding: 10px;
           margin: 10px;
         }
+        div.on-line{
+          flex-direction: column;
+        }
         img.logo-hbo{
-          width: 40%;
+          width: 70%;
           padding: 10px;
           margin: 10px;
         }
@@ -245,7 +260,10 @@
         section.Contact{
           padding: 5px;
           margin: 10px;
-        flex-direction: column;}
+        flex-direction: column;
+      }
+     
+
 
       }
       @media ( max-width : 880px ){
@@ -274,6 +292,8 @@
           text-align: center;
 
       }
+      div.on-line
+
     }
 
 
