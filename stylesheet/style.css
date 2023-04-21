@@ -21,6 +21,7 @@
     padding: 30px;
     background-color: lightblue;
     border-radius: 30px;
+    opacity:;
       
     }
 
@@ -54,7 +55,7 @@
    nav ul li a {
     text-decoration: none; 
     padding: 20px; 
-    margin: 40px;
+    gap: 40px;
     
     color:blue;
     font-size: 30px;
@@ -186,16 +187,20 @@
       }
       ul.personal {
         list-style: none;
+        
+      }
+      ul.personal li {
+        padding: 10px;
+        text-decoration: none;
       }
       /*media queri o punto de quiebre*/
 
-      @media ( max-width : 370px ){
+      @media ( max-width : 480px ){
         header div section.foto {
           flex-direction: column;
           align-items: center ;
         }
 
-   
         header div section img {
           width: 70%;
         }
@@ -217,7 +222,7 @@
 
         main{
           padding: 2px;
-          margin: 2px;
+          gap: 2px;
           align-items: center ;
           flex-direction: column;
         }
@@ -292,8 +297,7 @@
           text-align: center;
 
       }
-      div.on-line
-
+      
     }
 
 
